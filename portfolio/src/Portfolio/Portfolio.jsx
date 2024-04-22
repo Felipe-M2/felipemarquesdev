@@ -57,11 +57,11 @@ const Portfolio = () => {
                     </div>
 
                     <div className="sobreApresentacao">
-                        <p>Olá, meu nome é Felipe marques, eu tenho 23 anos, meu focu é desenvolvimento web, estou disponivel para novos desafios garantindo a satisfação do cliente que confiar em meu trabalho!</p>
+                        <p>Olá, meu nome é Felipe Marques, eu tenho 23 anos, meu foco é desenvolvimento web, estou disponível para novos desafios, garantindo a satisfação do cliente que confiar em meu trabalho!</p>
 
-                        <p>Tenho expêriencia tanto na criação de designers focado no cliente, quanto no código focado no usúario.</p>
+                        <p>Tenho experiência tanto na criação de designers focados no cliente quanto no código focado no usuário.</p>
 
-                        <p>Dá uma olhada no meu <span>PÓRTFOLIO</span>, vai valer á pena!</p>
+                        <p>Dá uma olhada no meu <span>PORTFÓLIO</span>, vai valer a pena!</p>
 
                         <a href=''>Conhecer</a>
                     </div>
@@ -71,14 +71,14 @@ const Portfolio = () => {
                     <div>
                         <img src={Pred} alt="" />
 
-                        <p>Meu foco como desenvolvedor é repassar as minhas habilidades para os meus clientes e consequentemente ajudá-los em seus negócios</p>
+                        <p>Meu foco como desenvolvedor é repassar as minhas habilidades para os meus clientes e consequentemente ajudá-los em seus negócios.</p>
 
                         <h1>DESENVOLVEDOR</h1>
                     </div>
 
                     <div className='div2apresentacao'>
 
-                        <p>Desde o design, passando pelo código e chegando a publicação do projeto, o objetivo é o mesmo: a satisfação do usuario!</p>
+                        <p>Desde o design, passando pelo código e chegando à publicação do projeto, o objetivo é o mesmo: a satisfação do usuário!</p>
 
                         <img src={Car} alt="" />
 
@@ -156,7 +156,7 @@ const Portfolio = () => {
                     </p>
 
                     <p className="infoCarreira">
-                        Estou aberto a novos desafios como programador, Garanto que consigo fazer a diferença nos seus objetivos, assim como o meu objetivo é garantir a sua satisfação e do seu publico!
+                    Estou aberto a novos desafios como programador, garanto que consigo fazer a diferença nos seus objetivos, assim como o meu objetivo é garantir a sua satisfação e do seu público!
                     </p>
 
                     <h1 className='nomeTopo'>FELIPE MARQUES</h1>
