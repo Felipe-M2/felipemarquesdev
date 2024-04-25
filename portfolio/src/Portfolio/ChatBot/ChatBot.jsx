@@ -6,20 +6,25 @@ const ChatBot = () => {
     const divChat = document.querySelector('.menssagen');
     const scrollToBotom = () => divChat.scrollTop = divChat.scrollHeight;
 
-    const [textChat, setTextChat] = useState();
+    const [textChat, setTextChat] = useState('');
     const [menssagens, setMenssagens] = useState([]);
 
     const textosProntos = [
         'Qual o seu telefone?',
         'Qual o seu E-Mail?',
-        'Me fale mais sobre a sua ideia de projeto, como eu posso te ajudar?'
-    ]
+        'Me fale mais sobre a sua ideia de projeto, como eu posso te ajudar?',
+        'Atribua uma nota de 1 a 5 para esse chatBot, isso vais nos ajudar a melhorar!'
+    ];
 
     const [posicao, setPosicao] = useState(0);
 
     const chatText = () => {
+        setMenssagens([textChat, ...menssagens]);
+        setTextChat('');
 
         if (posicao != textosProntos.length) {
+            setPosicao(posicao + 1);
+
             let divCliente = document.createElement("div");
             divCliente.innerHTML = textChat;
             divCliente.classList.add('menssagemClient');
@@ -34,15 +39,9 @@ const ChatBot = () => {
                 scrollToBotom();
             }, 1500)
 
-            setMenssagens([...menssagens, textChat]);
-            setTextChat('');
-            setPosicao(posicao + 1);
         } else {
-            divChat.innerHTML = '';
-            setMenssagens([...menssagens, textChat]);
-            setTextChat('');
             setPosicao(0);
-
+            divChat.innerHTML = '';
             divChat.innerHTML = `
                 <div class="CadConf">
                     <h1>    
@@ -50,6 +49,14 @@ const ChatBot = () => {
                     </h1>
                 </div>
             `;
+        }
+
+        console.log(menssagens);
+    }
+
+    const keyPress = (event) => {
+        if (event.key === 'Enter') {
+            chatText();
         }
     }
 
@@ -69,6 +76,7 @@ const ChatBot = () => {
                     name=""
                     id=""
                     value={textChat}
+                    onKeyDown={keyPress}
                 />
                 <button
                     onClick={chatText}
