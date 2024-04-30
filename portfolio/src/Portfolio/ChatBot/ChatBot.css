@@ -8,6 +8,10 @@
     padding: 10px;
 }
 
+.formChatText{
+    height: 100%;
+}
+
 .menssagen{
     height: calc(100% - 40px);
     overflow: auto;

@@ -8,6 +8,7 @@ const ChatBot = () => {
 
     const [textChat, setTextChat] = useState('');
     const [menssagens, setMenssagens] = useState([]);
+    const [status, setStatus] = useState(true);
 
     const textosProntos = [
         'Qual o seu telefone?',
@@ -41,16 +42,14 @@ const ChatBot = () => {
 
         } else {
             setPosicao(0);
-            divChat.innerHTML = '';
-            divChat.innerHTML = `
-                <div class="CadConf">
-                    <h1>    
-                        Cadastro confirmado, agora é só aguardar o nosso contato!
-                    </h1>
-                </div>
-            `;
+            setStatus(false);
+            divChat.innerHTML = "";
         }
+        console.log(menssagens);
+    }
 
+    const FunConfirm = () => {
+        setMenssagens(textChat);
         console.log(menssagens);
     }
 
@@ -62,29 +61,39 @@ const ChatBot = () => {
 
     return (
         <div className="formContato">
-
-            <div className="menssagen">
-                <div className="menssagemSistema">
-                    Olá, qual o seu nome?
+            {status === true ? (
+                <section className="formChatText">
+                    <div className="menssagen">
+                        <div className="menssagemSistema">
+                            Olá, qual o seu nome?
+                        </div>
+                    </div>
+                    <div className="inputForm">
+                        <input
+                            onChange={(event) => setTextChat(event.target.value)}
+                            type="text"
+                            name=""
+                            id=""
+                            value={textChat}
+                            onKeyDown={keyPress}
+                        />
+                        <button onClick={chatText}>
+                            <img src={EnvCont} alt="" />
+                        </button>
+                    </div>
+                </section>
+            ) : (
+                <div className="confirmContato">
+                    <h1>Você aceita receber contato para falar sobre a solicitação?</h1>
+                    <div>
+                        <button onClick={FunConfirm}>Sim</button>
+                        <button>Não</button>
+                    </div>
                 </div>
-            </div>
-
-            <div className="inputForm">
-                <input
-                    onChange={(event) => setTextChat(event.target.value)}
-                    type="text"
-                    name=""
-                    id=""
-                    value={textChat}
-                    onKeyDown={keyPress}
-                />
-                <button
-                    onClick={chatText}
-                ><img src={EnvCont} alt="" /></button>
-            </div>
-
+            )}
         </div>
-    )
+    );
+
 }
 
 export default ChatBot;
