@@ -8,6 +8,7 @@ import CardBack from '../assets/cardVerso.svg';
 
 import ChatBot from './ChatBot/ChatBot';
 import BannerPortfolio from './ListaPortfolio/ListaPortfolio';
+import DesignPortfolio from './DesignPortfolio/DesignPortfolio';
 
 const Portfolio = () => {
 
@@ -134,6 +135,8 @@ const Portfolio = () => {
                 </section>
 
                 < BannerPortfolio />
+
+                < DesignPortfolio />
 
                 <section className="contato">
                     <div className="cardContato">
