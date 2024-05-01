@@ -1,0 +1,47 @@
+.bannerProjeto{
+    width: 100%;
+    position: relative;
+}
+
+.infoBannerProjeto{
+    position: absolute;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.infoBannerProjeto h1{
+    font-size: clamp(1rem, 5rem, 6rem);
+    width: 50%;
+}
+
+.infoBannerProjeto p{
+    font-size: 1.3rem;
+    opacity: .8;
+}
+
+.linkBannerProjeto{
+    font-size: clamp(1rem, 5rem, 6rem);
+}
+
+.bannerImg{
+    width: 100%;
+}
+
+.btnProjeto{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.btnProjeto button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
