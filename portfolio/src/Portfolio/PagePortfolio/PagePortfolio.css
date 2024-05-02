@@ -1,0 +1,110 @@
+.pagePortfolio{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+    display: flex;
+}
+
+.infoPageProjeto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topoProjeto{
+    display: flex;
+    align-items: center;
+}
+
+.topoProjeto h1{
+    font-size: 3rem;
+}
+
+.linkHome{
+    font-size: .9rem;
+    margin-left: 40px;
+    opacity: .7;
+    transition: 200ms;
+}
+
+.linkHome:hover{
+    opacity: 1;
+}
+
+.divInfoProjeto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.divInfoProjeto h4{
+    font-size: 2rem;
+}
+
+.divInfoProjeto h1{
+    font-size: 3.2rem;
+}
+
+.circulo{
+    width: 200px;
+    height: 200px;
+}
+
+.linkProjeto{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+.linkProjeto div{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 2rem;
+}
+
+.imgPageProjeto{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.tecnologiasPageProjeto{
+    position: absolute;
+    width: 390px;
+    height: 140px;
+    background-color: #ffffff3f;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.imgTecnologia{
+    width: 100px;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 10px;
+}

@@ -28,6 +28,10 @@
     font-size: clamp(1rem, 5rem, 6rem);
 }
 
+.linkBannerProjeto:hover{
+    text-decoration: underline;
+}
+
 .bannerImg{
     width: 100%;
 }

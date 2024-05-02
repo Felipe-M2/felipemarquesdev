@@ -20,32 +20,33 @@ const ChatBot = () => {
     const [posicao, setPosicao] = useState(0);
 
     const chatText = () => {
-        setMenssagens([textChat, ...menssagens]);
-        setTextChat('');
+        if (textChat.length != 0) {
+            setMenssagens([textChat, ...menssagens]);
+            setTextChat('');
 
-        if (posicao != textosProntos.length) {
-            setPosicao(posicao + 1);
+            if (posicao != textosProntos.length) {
+                setPosicao(posicao + 1);
 
-            let divCliente = document.createElement("div");
-            divCliente.innerHTML = textChat;
-            divCliente.classList.add('menssagemClient');
-            divChat.appendChild(divCliente);
-            scrollToBotom();
-
-            setTimeout(() => {
-                let divSistema = document.createElement("div");
-                divSistema.innerHTML = textosProntos[posicao];
-                divSistema.classList.add('menssagemSistema');
-                divChat.appendChild(divSistema);
+                let divCliente = document.createElement("div");
+                divCliente.innerHTML = textChat;
+                divCliente.classList.add('menssagemClient');
+                divChat.appendChild(divCliente);
                 scrollToBotom();
-            }, 1500)
 
-        } else {
-            setPosicao(0);
-            setStatus(false);
-            divChat.innerHTML = "";
+                setTimeout(() => {
+                    let divSistema = document.createElement("div");
+                    divSistema.innerHTML = textosProntos[posicao];
+                    divSistema.classList.add('menssagemSistema');
+                    divChat.appendChild(divSistema);
+                    scrollToBotom();
+                }, 1500)
+
+            } else {
+                setPosicao(0);
+                setStatus(false);
+                divChat.innerHTML = "";
+            }
         }
-        console.log(menssagens);
     }
 
     const FunConfirm = () => {
@@ -54,8 +55,10 @@ const ChatBot = () => {
     }
 
     const keyPress = (event) => {
-        if (event.key === 'Enter') {
-            chatText();
+        if (textChat.length != 0) {
+            if (event.key === 'Enter') {
+                chatText();
+            }
         }
     }
 
