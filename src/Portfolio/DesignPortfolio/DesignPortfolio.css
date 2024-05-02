@@ -1,0 +1,51 @@
+.designPortfolio{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.tituloDesign{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.tituloDesign div{
+    width: 200px;
+    text-align: center;
+    font-style: italic;
+    opacity: .8;
+}
+
+.cardDesign{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-top: 2px solid var(--color-border);
+}
+
+.cardDesign:hover{
+    background-color: #fff;
+}
+
+.cardDesign div{
+    width: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardDesign:hover div{
+    color: #000;
+}
+
+.imgProjetoDesign{
+    width: 300px;
+    height: 380px;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}

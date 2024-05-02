@@ -258,7 +258,6 @@ body{
 /* CONTATO */
 
 .contato{
-    border-top: 1px solid var(--color-border);
     padding: 40px;
     display: flex;
     gap: 40px;

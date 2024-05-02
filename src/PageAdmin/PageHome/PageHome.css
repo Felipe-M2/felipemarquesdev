@@ -1,0 +1,70 @@
+.pageHome{
+    display: flex;
+    max-height: 100vh;
+}
+
+.navBarLeft{
+    min-width: 160px;
+    height: 100vh;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.logo h1{
+    font-size: 1rem;
+}
+
+.contentPageHome{
+    width: auto;
+    overflow: auto;
+}
+
+.cards{
+    display: flex;
+    position: relative;
+}
+
+.cards div{
+    max-width: calc(33.3vw - 53.3px);
+    position: relative;
+}
+
+.cards div img{
+    width: 100%;
+}
+
+.tituloCard,
+.linkCardAdmin{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 3rem;
+}
+
+.linkCardAdmin{
+    right: 20px;
+    top: 85%;
+    z-index: 2;
+    font-size: 1.8rem;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    left: initial;
+}
+
+
+.utilsPageHome{
+    height: 1000px;
+    width: 100%;
+    background-color: #fff;
+}
