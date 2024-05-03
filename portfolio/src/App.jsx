@@ -10,13 +10,13 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter >
         <Routes>
           <Route path="/felipemarquesdev" exact Component={Portfolio} />
           <Route path="/felipemarquesdev/projeto" Component={PagePortfolio} />
           <Route path="/felipemarquesdev/admin" Component={PageHome} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter >
     </>
   )
 }
