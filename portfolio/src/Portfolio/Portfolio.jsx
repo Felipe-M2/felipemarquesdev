@@ -1,4 +1,7 @@
 import './Portfolio.css';
+
+import { Link } from 'react-router-dom';
+
 import Logo from '../assets/logo.svg';
 import Foto from '../assets/foto.svg';
 import Pred from '../assets/pred.svg';
@@ -174,7 +177,7 @@ const Portfolio = () => {
                         <li><a href="">GitHub</a></li>
                         <li><a href="">Portfolio</a></li>
                         <li><a href="">Contato</a></li>
-                        <li><a href="">Sobre</a></li>
+                        <li><Link to="/felipemarquesdev/admin">Admin</Link></li>
                     </ul>
                 </nav>
             </footer>
