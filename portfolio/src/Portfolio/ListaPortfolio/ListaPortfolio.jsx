@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './ListaPortfolio.css';
 
 import Banner from '../../assets/banner.svg';
-import Banner2 from '../../assets/banner2.svg';
+import Fincontrol from '../../assets/fincontrol.svg';
 
 const ListaPortfolio = () => {
 
@@ -12,13 +12,13 @@ const ListaPortfolio = () => {
 
     const bannerLista = [
         {
-            nomeProjeto: "Projeto 1",
-            imgProjeto: Banner,
-            linkProjeto: "/felipemarquesdev/projeto"
+            nomeProjeto: "FinControl",
+            imgProjeto: Fincontrol,
+            linkProjeto: "https://fincontrol-5h34nv7ti-felipe-m2.vercel.app/"
         },
         {
             nomeProjeto: "Projeto 2",
-            imgProjeto: Banner2,
+            imgProjeto: Banner,
             linkProjeto: "https://www.google.com.br"
         }
     ]
