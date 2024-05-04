@@ -1,5 +1,6 @@
 import './Portfolio.css';
 
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../assets/logo.svg';
@@ -13,11 +14,29 @@ import ChatBot from './ChatBot/ChatBot';
 import BannerPortfolio from './ListaPortfolio/ListaPortfolio';
 import DesignPortfolio from './DesignPortfolio/DesignPortfolio';
 
-const Portfolio = () => {
+import LoguinAdmin from './LoguinAdmin/LoguinAdmin';
 
+const Portfolio = () => { 
+
+    const [terminal, setTerminal] = useState(false);
+
+    document.addEventListener("keydown", function(e){
+        if(e.ctrlKey && e.key === "0"){
+            setTerminal(true)
+        }
+    });
+
+    const closeTerminal = ()=>setTerminal(false);
 
     return (
         <>
+
+            {terminal === true ?(
+                <div className="terminalPortfolio">
+                    < LoguinAdmin closeTerminal={closeTerminal} />
+                </div>
+            ):null}
+
             <header className="topo">
                 <div className="topoFlex">
                     <div className="logo">

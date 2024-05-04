@@ -39,6 +39,10 @@ const ListaPortfolio = () => {
         }
     }
 
+    setInterval(()=>{
+        position("prox")
+    }, 8000)
+
     return (
         <section className="bannerProjeto">
             <div className="infoBannerProjeto">

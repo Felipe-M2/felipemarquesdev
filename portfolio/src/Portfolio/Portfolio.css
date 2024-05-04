@@ -32,6 +32,15 @@ body{
     margin: 0 auto;
 }
 
+.terminalPortfolio{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* TOPO */
 
 .topo{
@@ -47,8 +56,12 @@ body{
     height: 250px;
 }
 
+.logo{
+    display: block !important;
+}
+
 .logo img{
-    width: 150px;
+    width: 150px !important;
 }
 
 .navBarTopo{
