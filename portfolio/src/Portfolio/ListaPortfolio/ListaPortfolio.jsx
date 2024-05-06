@@ -39,12 +39,6 @@ const ListaPortfolio = () => {
         }
     }
 
-    useEffect(() => {
-        setTimeout(() => {
-            position("prox");
-        }, 8000);
-    }, []);
-
     return (
         <section className="bannerProjeto">
             <div className="infoBannerProjeto">
