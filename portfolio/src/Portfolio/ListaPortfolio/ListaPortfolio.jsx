@@ -14,7 +14,7 @@ const ListaPortfolio = () => {
         {
             nomeProjeto: "FinControl",
             imgProjeto: Fincontrol,
-            linkProjeto: "https://fincontrol-5h34nv7ti-felipe-m2.vercel.app/"
+            linkProjeto: "/felipemarquesdev/projeto"
         },
         {
             nomeProjeto: "Projeto 2",

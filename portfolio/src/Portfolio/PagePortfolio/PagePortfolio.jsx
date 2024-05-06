@@ -2,14 +2,16 @@ import { Link } from 'react-router-dom';
 
 import './PagePortfolio.css';
 
+import FinTela from '../../assets/fintela1.svg'; 
+
 const PagePortfolio = () => {
 
     const data = [
         {
-            nomeProjeto: "Nome do Projeto",
-            tipoProjeto: "Tipo do projeto",
-            descricaoProjeto: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa cumque magni reprehenderit autem quae tempore perferendis hic similique totam!",
-            linkProjeto: "https://www.google.com.br"
+            nomeProjeto: "FinControl",
+            tipoProjeto: "Financeiro",
+            descricaoProjeto: "FinControl é um projeto pessoal que tem o objetivo de me ajudar a reorganizar a minha vida financeira, o sistema seria responsável por registrar meus gastos e entradas de dinheiro e gerar relatórios para um controle maior, além disso, ele enviaria mensagens sobre as análises e geraria um relatório anual de gastos!",
+            linkProjeto: "https://fincontrol-5h34nv7ti-felipe-m2.vercel.app/"
         }
     ]
 
@@ -42,7 +44,7 @@ const PagePortfolio = () => {
             </section>
 
             <section className="imgPageProjeto">
-
+                <img src={FinTela} alt="" />
             </section>
 
             <section className="tecnologiasPageProjeto">
@@ -54,7 +56,9 @@ const PagePortfolio = () => {
                     <h1>Tecnologias</h1>
 
                     <div className="cardsTec">
-
+                        <div>ReactJS</div>
+                        <div>NodeJS</div>
+                        <div>MySQL</div>
                     </div>
                 </div>
             </section>
