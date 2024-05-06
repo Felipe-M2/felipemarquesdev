@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import './ListaPortfolio.css';
 
@@ -39,9 +39,11 @@ const ListaPortfolio = () => {
         }
     }
 
-    setInterval(()=>{
-        position("prox")
-    }, 8000)
+    useEffect(() => {
+        setTimeout(() => {
+            position("prox");
+        }, 8000);
+    }, []);
 
     return (
         <section className="bannerProjeto">

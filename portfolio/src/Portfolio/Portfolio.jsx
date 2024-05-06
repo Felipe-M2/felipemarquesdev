@@ -45,10 +45,10 @@ const Portfolio = () => {
 
                     <nav className="navBarTopo">
                         <ul>
-                            <li><a href="">Instagram</a></li>
-                            <li><a href="">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/felipe-marques-devfullstack/">Linkedin</a></li>
+                            <li><a href="https://github.com/Felipe-M2">GitHub</a></li>
                             <li><a href="">Portfolio</a></li>
-                            <li><a href="">Contato</a></li>
+                            <li><a href="#contato">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -160,7 +160,7 @@ const Portfolio = () => {
 
                 < DesignPortfolio />
 
-                <section className="contato">
+                <section className="contato" id="contato">
                     <div className="cardContato">
                         <div className="flipper">
                             <div className="card-front">
@@ -192,11 +192,10 @@ const Portfolio = () => {
 
                 <nav className="navBarTopo">
                     <ul>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/felipe-marques-devfullstack/">Linkedin</a></li>
+                        <li><a href="https://github.com/Felipe-M2">GitHub</a></li>
                         <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contato</a></li>
-                        <li><Link to="/felipemarquesdev/admin">Admin</Link></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </footer>
