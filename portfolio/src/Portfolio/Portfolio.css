@@ -19,6 +19,8 @@
     --cor-fonte-opacity: #B4B4B4;   
     --linear-gradient-titulo:  linear-gradient(90deg, #FFFFFF, #999999 10%);
     --color-border: #999999;
+    --cursorClick: url('../assets/mouseclick.svg'), auto;
+    --cursorText: url('../assets/mousetext.svg'), auto;
 }
 
 html{
@@ -71,6 +73,7 @@ body{
 .navBarTopo ul li{
     transition: 200ms;
     height: 30px;
+    cursor: var(--cursorClick);
 }
 
 .navBarTopo ul li a{
@@ -79,6 +82,11 @@ body{
 
 .navBarTopo ul li:hover{
     transform: translate(0px, 0.4444rem) skew(0deg, 10deg);
+    cursor: var(--cursorClick);
+}
+
+.navBarTopo ul li a:hover{
+    cursor: var(--cursorClick);
 }
 
 .nomeTopo{

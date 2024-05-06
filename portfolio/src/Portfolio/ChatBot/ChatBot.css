@@ -73,6 +73,10 @@
     color: #000;
 }
 
+.inputForm input:hover{
+    cursor: var(--cursorText);
+}
+
 .inputForm button{
     width: 40px;
     height: 40px;
