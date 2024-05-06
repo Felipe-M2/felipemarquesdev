@@ -17,9 +17,9 @@ const ListaPortfolio = () => {
             linkProjeto: "/felipemarquesdev/projeto"
         },
         {
-            nomeProjeto: "Projeto 2",
+            nomeProjeto: "Em breve",
             imgProjeto: Banner,
-            linkProjeto: "https://www.google.com.br"
+            linkProjeto: "/felipemarquesdev"
         }
     ]
 
