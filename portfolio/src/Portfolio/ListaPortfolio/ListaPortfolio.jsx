@@ -42,7 +42,7 @@ const ListaPortfolio = () => {
     return (
         <section className="bannerProjeto">
             <div className="infoBannerProjeto">
-                <h1>Criatividade e paixão por tecnologia</h1>
+                <h1>Criatividade e paixão por tecnologia!</h1>
 
                 <p>Resultado:</p>
 
