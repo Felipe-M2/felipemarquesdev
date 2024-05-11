@@ -28,7 +28,7 @@ const Portfolio = () => {
             clearTimeout(timer);
             timer = setTimeout(()=>{
                 setIsMove(true);
-            }, 30000);
+            }, 60000);
         }
 
         document.addEventListener('mousemove', handleMouseMove);
