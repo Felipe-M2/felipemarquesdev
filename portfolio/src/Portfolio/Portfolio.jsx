@@ -13,10 +13,31 @@ import CardBack from '../assets/cardVerso.svg';
 import ChatBot from './ChatBot/ChatBot';
 import BannerPortfolio from './ListaPortfolio/ListaPortfolio';
 import DesignPortfolio from './DesignPortfolio/DesignPortfolio';
-
 import LoguinAdmin from './LoguinAdmin/LoguinAdmin';
+import Tela from './Tela/Tela';
 
 const Portfolio = () => {
+
+    const [isMove, setIsMove] = useState(false);
+
+    useEffect(()=>{
+        let timer;
+
+        const handleMouseMove = ()=>{
+            setIsMove(false);
+            clearTimeout(timer);
+            timer = setTimeout(()=>{
+                setIsMove(true);
+            }, 30000);
+        }
+
+        document.addEventListener('mousemove', handleMouseMove);
+
+        return()=>{
+            clearTimeout(timer);
+            document.removeEventListener('mousemove', handleMouseMove);
+        }
+    }, [])
 
     const [terminal, setTerminal] = useState(false);
 
@@ -30,6 +51,14 @@ const Portfolio = () => {
 
     return (
         <>
+
+            {
+                isMove ?(
+                    <div className="tela">
+                        < Tela />
+                    </div>
+                ):null
+            }
 
             {terminal === true ? (
                 <div className="terminalPortfolio">
