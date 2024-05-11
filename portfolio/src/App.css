@@ -1,3 +1,4 @@
 *{
     cursor: url('./assets/mouse.svg'), auto;
+    scroll-behavior: smooth;
 }

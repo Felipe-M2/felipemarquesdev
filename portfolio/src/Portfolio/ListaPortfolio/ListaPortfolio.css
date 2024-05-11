@@ -30,6 +30,7 @@
 
 .linkBannerProjeto:hover{
     text-decoration: underline;
+    cursor: var(--cursorClick);
 }
 
 .bannerImg{

@@ -1,6 +1,6 @@
 import './Portfolio.css';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../assets/logo.svg';
@@ -16,26 +16,26 @@ import DesignPortfolio from './DesignPortfolio/DesignPortfolio';
 
 import LoguinAdmin from './LoguinAdmin/LoguinAdmin';
 
-const Portfolio = () => { 
+const Portfolio = () => {
 
     const [terminal, setTerminal] = useState(false);
 
-    document.addEventListener("keydown", function(e){
-        if(e.ctrlKey && e.key === "0"){
+    document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.key === "0") {
             setTerminal(true)
         }
     });
 
-    const closeTerminal = ()=>setTerminal(false);
+    const closeTerminal = () => setTerminal(false);
 
     return (
         <>
 
-            {terminal === true ?(
+            {terminal === true ? (
                 <div className="terminalPortfolio">
                     < LoguinAdmin closeTerminal={closeTerminal} />
                 </div>
-            ):null}
+            ) : null}
 
             <header className="topo">
                 <div className="topoFlex">
@@ -47,7 +47,7 @@ const Portfolio = () => {
                         <ul>
                             <li><a href="https://www.linkedin.com/in/felipe-marques-devfullstack/">Linkedin</a></li>
                             <li><a href="https://github.com/Felipe-M2">GitHub</a></li>
-                            <li><a href="">Portfolio</a></li>
+                            <li><a href="#linkPortfolio">Portfolio</a></li>
                             <li><a href="#contato">Contato</a></li>
                         </ul>
                     </nav>
@@ -156,7 +156,9 @@ const Portfolio = () => {
                     </div>
                 </section>
 
-                < BannerPortfolio />
+                <div id='linkPortfolio'>
+                    < BannerPortfolio />
+                </div>
 
                 < DesignPortfolio />
 
@@ -184,7 +186,7 @@ const Portfolio = () => {
                     </p>
 
                     <p className="infoCarreira">
-                    Estou aberto a novos desafios como programador, garanto que consigo fazer a diferença nos seus objetivos, assim como o meu objetivo é garantir a sua satisfação e do seu público!
+                        Estou aberto a novos desafios como programador, garanto que consigo fazer a diferença nos seus objetivos, assim como o meu objetivo é garantir a sua satisfação e do seu público!
                     </p>
 
                     <h1 className='nomeTopo'>FELIPE MARQUES</h1>
@@ -194,7 +196,7 @@ const Portfolio = () => {
                     <ul>
                         <li><a href="https://www.linkedin.com/in/felipe-marques-devfullstack/">Linkedin</a></li>
                         <li><a href="https://github.com/Felipe-M2">GitHub</a></li>
-                        <li><a href="">Portfolio</a></li>
+                        <li><a href="#linkPortfolio">Portfolio</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
